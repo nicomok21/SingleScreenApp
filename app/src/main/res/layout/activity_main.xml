@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.singlescreenapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sochi Sushi"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorAccent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/phone"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/phoneIcon"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/phoneIcon"
+            android:text="035 - 6409877"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <ImageView
+            android:id="@+id/adressIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/phoneIcon"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home"
+            android:layout_marginBottom="9dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adressIcon"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/adressIcon"
+            android:text="Groest 51, 1211 CZ Hilversum"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"
+            android:layout_marginBottom="3dp"/>
+
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/adressIcon"
+            android:layout_marginLeft="20dp"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/openingsTijden"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/time"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/time"
+            android:text="Business hours"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/openingsTijden"
+            android:text="@string/dagen"
+            android:textSize="12sp"
+            android:paddingLeft="90dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_toRightOf="@+id/days"
+            android:text="@string/Tijden"
+            android:textSize="12sp"
+            android:paddingLeft="20dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
